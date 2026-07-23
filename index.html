@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,72 +14,118 @@
 
 </head>
 
+
 <body>
 
-<h1>Our Memories</h1>
-
-<audio controls>
-  <source src="musik.mp3" type="audio/mpeg">
-</audio>
-
-
-</body>
 
 <!-- Background -->
 <div class="stars"></div>
 <div class="hearts"></div>
 
-<!-- Opening -->
+
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+
+<button class="musicBtn" onclick="playMusic()">
+🎵 Play Music
+</button>
+
+
+
+<!-- OPENING -->
+
 <section id="opening">
 
 <h2>A Special Letter For</h2>
 
-<h1>Meisya Azmi Fairuz ❤️</h1>
+<h1>
+Meisya Azmi Fairuz ❤️
+</h1>
+
 
 <p>
 Created with love by
 </p>
 
+
 <h3>
 Muhammad Aurellino Ibrahimovic Setiawan
 </h3>
+
 
 <button id="openBtn">
 💌 Open My Heart
 </button>
 
+
 </section>
 
-<!-- Envelope -->
+
+
+
+
+<!-- ENVELOPE -->
+
+
 <section id="envelopeSection" class="hidden">
+
 
 <div class="envelope">
 
+
 <div class="top"></div>
+
 
 <div class="letter">
 
-<h2>Untuk Meisya ❤️</h2>
+
+<h2>
+Untuk Meisya ❤️
+</h2>
+
 
 <div id="typing"></div>
 
-</div>
 
 </div>
+
+
+</div>
+
+
 
 <button id="nextGallery">
 Lihat Kenangan 📸
 </button>
 
+
 </section>
 
-<!-- Gallery -->
+
+
+
+
+
+
+<!-- GALLERY -->
+
 
 <section id="gallery" class="hidden">
 
-<h1>Our Memories ❤️</h1>
+
+<h1>
+Our Memories ❤️
+</h1>
+
+
 
 <div class="slider">
+
 
 <img src="meisya1.png">
 
@@ -91,33 +139,56 @@ Lihat Kenangan 📸
 
 <img src="meisya6.png">
 
+
 </div>
 
+
+
 <button id="nextLove">
-
 Next ❤️
-
 </button>
+
+
 
 </section>
 
-<!-- Love Counter -->
+
+
+
+
+
+
+
+<!-- LOVE COUNTER -->
+
 
 <section id="love" class="hidden">
 
-<h1>❤️</h1>
 
-<h2>Since</h2>
+<h1>
+❤️
+</h1>
 
-<h1>28 April</h1>
+
+<h2>
+Since
+</h2>
+
+
+<h1>
+28 April
+</h1>
+
 
 <p>
-
 Terima kasih sudah menjadi bagian terindah dalam hidupku.
-
 </p>
 
+
+
 <div id="daysTogether"></div>
+
+
 
 <button id="finish">
 
@@ -125,29 +196,42 @@ Forever With You ❤️
 
 </button>
 
+
 </section>
 
-<!-- Ending -->
+
+
+
+
+
+
+
+<!-- ENDING -->
+
 
 <section id="ending" class="hidden">
 
+
 <h1>
-
 I Love You
-
 </h1>
 
+
 <h2>
-
 Meisya Azmi Fairuz
-
 </h2>
+
+
 
 <p>
 
 Semoga kita selalu bersama.
 
+<br><br>
+
 Terima kasih sudah hadir di hidupku.
+
+<br><br>
 
 Aku akan selalu berusaha menjadi laki-laki terbaik untukmu.
 
@@ -155,15 +239,41 @@ Aku akan selalu berusaha menjadi laki-laki terbaik untukmu.
 
 </p>
 
+
+
 <h3>
-
 — Muhammad Aurellino Ibrahimovic Setiawan
-
 </h3>
+
 
 </section>
 
+
+
+
+
+
+
+
+<script>
+
+function playMusic(){
+
+let music = document.getElementById("music");
+
+music.play();
+
+}
+
+
+</script>
+
+
+
 <script src="script.js"></script>
 
+
+
 </body>
+
 </html>
